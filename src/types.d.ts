@@ -13,7 +13,7 @@ declare interface ImportMeta {
         BASE_URL: string
         PROD: boolean
         DEV: boolean
-        
+
         [key: string]: any
     }
 

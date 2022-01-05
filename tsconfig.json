@@ -9,13 +9,7 @@
         "baseUrl": "./src",
         "jsxImportSource": "react",
         "paths": {
-            "~/*": ["./*"],
-            "@components/*": ["./components/*"],
-            "@hooks/*": ["./hooks/*"],
-            "@models/*": ["./models/*"],
-            "@pages/*": ["./pages/*"],
-            "@services/*": ["./services/*"],
-            "@usecases/*": ["./usecases/*"]
+            "$/*": ["./*"]
         },
         "lib": ["DOM", "ESNext"]
     }

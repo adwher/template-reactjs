@@ -1,9 +1,8 @@
-import React from "react"
+import App from "./app"
 import ReactDOM from "react-dom"
 
-import "./styles/index.scss"
+// MODULES
 
-import App from "./app"
-
+import "$/styles/index.scss"
 
 ReactDOM.render(<App />, document.querySelector("#app"))

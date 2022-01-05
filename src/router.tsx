@@ -1,18 +1,17 @@
-import { FunctionComponent, ComponentType } from "react"
+import { Switch, Route } from "react-router-dom"
 
-interface Route {
-    path: string
-    component: () => Promise<{ default: FunctionComponent | ComponentType }>
+// PAGES
+
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound"
+
+function Router() {
+    return (
+        <Switch>
+            <Route path="/" component={Home} />
+            <Route path="*" component={NotFound} />
+        </Switch>
+    )
 }
 
-export const routes: Route[] = [
-    {
-        path: "/",
-        component: () => import("./pages/Home")
-    },
-
-    {
-        path: "*",
-        component: () => import("./pages/NotFound")
-    }
-]
+export default Router

@@ -1,5 +1,3 @@
-import React from "react"
-
 function Loading() {
     return (
         <main className="content-1 flex-view gap-3 text-center flex-centered">
