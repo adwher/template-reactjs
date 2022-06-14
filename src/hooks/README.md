@@ -6,25 +6,21 @@ Put your `hooks` using brand new composition API components. You can use `$/hook
 // hooks/useCounter.ts
 
 export function useMyHook() {
-    // TO-DO
+    // your awesome hook
 }
 ```
 
-```vue
-<template>
-    <!-- My view -->
-</template>
+```tsx
+import { useMyHook } from "$/hooks/useCounter"
 
-<script lang="ts">
-import { defineComponent } from "vue"
-import { useMyHook } from "$/hooks/useMyHook"
+function MyComponent() {
+    const { count, add } = useMyHook()
 
-export default defineComponent({
-    setup() {
-        const { state } = useMyHook()
-
-        return { state }
-    },
-})
-</script>
+    return (
+        <div>
+            <p>{count}</p>
+            <button onClick={add}>Add</button>
+        </div>
+    )
+}
 ```

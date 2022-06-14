@@ -10,10 +10,22 @@ export function findUserByNickname(id: string) {
 }
 ```
 
-```ts
+```tsx
 // some/other/file.ts
 
 import { findUserByNickname } from "$/usecases/findUsers"
 
-const user = findUserByNickname("adwher")
+function MyComponent() {
+    async function fetchUser() {
+        const user = await findUserByNickname("some-nickname")
+
+        // ... MAGIC!
+    }
+
+    return (
+        <div>
+            <button onClick={fetchUser}>Fetch</button>
+        </div>
+    )
+}
 ```
