@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound"
 function Router() {
     return (
         <Switch>
-            <Route path="/" component={Home} />
+            <Route path="/" exact={true} component={Home} />
             <Route path="*" component={NotFound} />
         </Switch>
     )
