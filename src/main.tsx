@@ -1,9 +1,8 @@
 import App from "./app"
-import ReactDOM from "react-dom"
-
-// MODULES
+import { createRoot } from "react-dom/client"
 
 import "uno.css"
 import "$/styles/index.scss"
 
-ReactDOM.render(<App />, document.querySelector("#app"))
+const root = createRoot(document.querySelector("#app"))
+root.render(<App />)
