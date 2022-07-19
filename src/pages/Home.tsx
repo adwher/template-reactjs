@@ -2,7 +2,7 @@ function Home() {
     return (
         <main className="flex flex-col justify-center items-center p-10">
             <img
-                className="w-full max-w-80 h-80 mb-10"
+                className="w-full max-w-60 h-60 mb-10"
                 src="/vitejs.svg"
                 alt="Vitejs Logo"
             />
@@ -21,8 +21,11 @@ function Home() {
                 >
                     @adwher
                 </a>
-                . Let's this project begin at <code>src/main.tsx</code> and
-                start to make awesome things.
+                . Let's this project begin at{" "}
+                <code className="bg-gray-100 px-2 py-1 rounded-1">
+                    src/main.tsx
+                </code>{" "}
+                and start to make awesome things.
             </p>
 
             <div className="">
